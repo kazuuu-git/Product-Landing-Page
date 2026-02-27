@@ -385,6 +385,8 @@ body section.featured-products {
     background-color: #13237e;
     color: white;
     min-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .contact-info h2 {
