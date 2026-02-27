@@ -71,6 +71,34 @@ body .fp-title {
     text-align: center;
 }
 
+.nav-links li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #d1d5eb;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
 /* cta */
 .cta-wrapper {
     position: absolute;
